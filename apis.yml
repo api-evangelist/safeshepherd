@@ -1,7 +1,25 @@
 aid: safeshepherd
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/safeshepherd.png
 name: SafeShepherd
-description: SafeShepherd is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Safe Shepherd is a consumer privacy and identity-protection service that
+  proactively removes an individual's personal information from the internet and from
+  marketing and data-broker databases. It continuously scans public websites and private
+  databases for a subscriber's personal data, sends real-time email alerts when records
+  are found, and submits opt-out and deletion requests on the subscriber's behalf (with
+  manual removal instructions where automated removal is not possible). Surfaced as a
+  500 Global portfolio company and profiled in the API Evangelist network; the public
+  site is a consumer product with no developer/API surface.
 url: https://raw.githubusercontent.com/api-evangelist/safeshepherd/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Privacy
+- Identity Protection
+- Data Removal
+- Data Brokers
+- Consumer Security
+- Personal Information
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/safeshepherd-domain-security.yml
 - type: Website
   url: https://safeshepherd.com
+- type: GettingStarted
+  url: https://safeshepherd.com/how
+- type: SignUp
+  url: https://dashboard.safeshepherd.com/signup
+- type: TermsOfService
+  url: https://safeshepherd.com/tos
+- type: PrivacyPolicy
+  url: https://safeshepherd.com/privacy-policy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
